@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mail:
+    build: .
+    ports:
+      - "25:25"
+    environment:
+      - SERVER_HOSTNAME=example.com
